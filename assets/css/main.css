@@ -1,0 +1,23 @@
+.navbar-logo {
+  height: 4rem;
+  margin-right: 10px;
+}
+
+.footer{
+  background:#05080D;
+  color:#8B949E;
+}
+
+.footer-logo {
+    width: 75%;
+}
+
+.footer-item {
+    display: table;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: large;
+    color: aliceblue;
+
+}    

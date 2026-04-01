@@ -175,7 +175,8 @@ function getPoolStats(poolID, poolURL) {
     });
 }
 
-// Update
+// Update pools
+function updatePools() {
     getPoolMiningCore('btc', 'https://api.globalcryptomining.infinium.space/api/pools');
     getPoolMiningCore('bch', 'https://api.globalcryptomining.infinium.space/api/pools');
     getPoolMiningCore('ltc', 'https://api.globalcryptomining.infinium.space/api/pools');
