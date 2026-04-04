@@ -1,6 +1,10 @@
-.navbar-logo {
+.navbar-logo{
   height: 4rem;
   margin-right: 10px;
+}
+
+thead th{
+    background: #ab8d55 !important;
 }
 
 .pools {
@@ -42,3 +46,37 @@
     margin: revert;
     font-weight: 400;
 }
+
+thead > tr {
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody > tr {
+    vertical-align: middle;
+    text-align: center;
+}
+tbody  td  a{
+    text-decoration: none;
+    color: black;
+}
+
+tbody > tr:nth-of-type(2n + 1) > td:nth-of-type(1n + 1),
+tbody > tr:nth-of-type(2n + 1) > th:nth-of-type(1n + 1) {
+    background: #c2b39a !important;
+}
+
+tbody > tr:hover > td:nth-of-type(1n + 1),
+tbody > tr:hover > th:nth-of-type(1n + 1) {
+    background: #ffa200 !important;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.table-responsive {
+overflow-x: auto;
+scrollbar-width: none;
+}
+
