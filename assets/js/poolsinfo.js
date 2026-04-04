@@ -35,8 +35,10 @@ function getPoolMiningCore(poolID, poolURL){
                 poolBlockReward = 3.125
              } else if (poolId === 'ltc'){
                 poolBlockReward = 6.250
-             } else if (poolId === 'doge'){
-                poolBlockReward = 10000
+             } else if (poolId === 'plsr'){
+                poolBlockReward = 11
+             } else if (poolId === 'cas'){
+                poolBlockReward = 25
              } else {
                 poolBlockReward = 0
              }; 
@@ -88,6 +90,7 @@ function getPoolStats(poolID, poolURL) {
             networkHashrate = getReadableHashRate(data.network.difficulty / data.config.coinDifficultyTarget);
             networkDiff     = data.network.difficulty;
         }
+        
 
         var hashPower = 'N/A';
         var poolDifficulty = 'N/A';
@@ -160,7 +163,7 @@ function getPoolStats(poolID, poolURL) {
         updateText(poolID + '_poolHashrate', poolHashrate);
         updateText(poolID + '_poolMiners', poolMiners);
         updateText(poolID + '_poolMinersSolo', poolMinersSolo);
-	      updateText(poolID + '_poolWorkers', poolWorkers);
+	    updateText(poolID + '_poolWorkers', poolWorkers);
         updateText(poolID + '_poolWorkersSolo', poolWorkersSolo);
         updateText(poolID + '_networkHashrate', networkHashrate);
         updateText(poolID + '_hashPower', hashPower);
@@ -181,6 +184,9 @@ function updatePools() {
     getPoolMiningCore('bch', 'https://api.globalcryptomining.infinium.space/api/pools');
     getPoolMiningCore('ltc', 'https://api.globalcryptomining.infinium.space/api/pools');
     getPoolMiningCore('plsr', 'https://api.globalcryptomining.infinium.space/api/pools');
+    getPoolMiningCore('cas', 'https://api.globalcryptomining.infinium.space/api/pools');
+    getPoolStats('inf', 'https://api.pool.infinium.space');
+    getPoolStats('zeph', 'https://zeph.infinium.space/api');
 
 }
 

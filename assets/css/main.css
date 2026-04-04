@@ -3,6 +3,11 @@
   margin-right: 10px;
 }
 
+.pools {
+    color: #FFFFFF;
+    background: radial-gradient(circle at 50% 30%, rgba(198, 167, 94, 0.18), transparent 60%), linear-gradient(135deg, #0F172A, #111827);
+}
+
 .footer{
   background:#05080D;
   color:#8B949E;
@@ -20,4 +25,20 @@
     font-size: large;
     color: aliceblue;
 
-}    
+}
+
+.footer-content {
+    background: linear-gradient(360deg, #353535, #5f4000ab);
+    padding: 2rem;
+}
+
+.copyright {
+    background: linear-gradient(0deg, #000000, #3b2e02e3);
+}
+
+.copyrighttext {
+    color: #8B949E;
+    font-size: 1.1rem;
+    margin: revert;
+    font-weight: 400;
+}
