@@ -1,7 +1,7 @@
 var API = 'https://api.globalcryptomining.infinium.space/api/';
-var URLSTRATUM = "superblockchain.zapto.org";
-var defaultPool = 'plsr';
-var ticketCoinPool = 'PLSR';  
+var URLSTRATUM = "globalcryptomining.infinium.space";
+var defaultPool = 'cas';
+var ticketCoinPool = 'CAS';  
 var currentPool = defaultPool;
 
 function _formatter(value, decimal, unit) {
